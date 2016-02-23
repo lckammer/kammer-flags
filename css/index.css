@@ -1,0 +1,14 @@
+html {
+  color: #002000;
+  background-color: #f0fff0;
+  font-family: Sans-serif;
+}
+
+button {
+  background-color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4px;
+}

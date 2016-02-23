@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+  </script>
+  <script src="js/jqueryflags.js"></script>
+</head>
+<body>
+  <p>Flag colors:
+  <div>
+  <input type="color" id="color1" onchange="draw()" value=#FFFFFF>
+  <input type="color" id="color2" onchange="draw()" value=#7F7F7F>
+  <input type="color" id="color3" onchange="draw()" value=#000000>
+  </p>
+  <div>
+  <p>Flag style:
+  <div>
+  <button type="button" id="0" class="buttonFlag">
+    <canvas id="miniFlag0" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="1" class="buttonFlag">
+    <canvas id="miniFlag1" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="2" class="buttonFlag">
+    <canvas id="miniFlag2" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="3" class="buttonFlag">
+    <canvas id="miniFlag3" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="4" class="buttonFlag">
+    <canvas id="miniFlag4" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="5" class="buttonFlag">
+    <canvas id="miniFlag5" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <div>
+  <button type="button" id="6" class="buttonFlag">
+    <canvas id="miniFlag6" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="7" class="buttonFlag">
+    <canvas id="miniFlag7" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="8" class="buttonFlag">
+    <canvas id="miniFlag8" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="9" class="buttonFlag">
+    <canvas id="miniFlag9" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="10" class="buttonFlag">
+    <canvas id="miniFlag10" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="11" class="buttonFlag">
+    <canvas id="miniFlag11" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <div>
+  <button type="button" id="12" class="buttonFlag">
+    <canvas id="miniFlag12" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="13" class="buttonFlag">
+    <canvas id="miniFlag13" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="14" class="buttonFlag">
+    <canvas id="miniFlag14" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="15" class="buttonFlag">
+    <canvas id="miniFlag15" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="16" class="buttonFlag">
+    <canvas id="miniFlag16" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="17" class="buttonFlag">
+    <canvas id="miniFlag17" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <div>
+  <button type="button" id="18" class="buttonFlag">
+    <canvas id="miniFlag18" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="19" class="buttonFlag">
+    <canvas id="miniFlag19" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="20" class="buttonFlag">
+    <canvas id="miniFlag20" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="21" class="buttonFlag">
+    <canvas id="miniFlag21" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="22" class="buttonFlag">
+    <canvas id="miniFlag22" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="23" class="buttonFlag">
+    <canvas id="miniFlag23" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <div>
+  <button type="button" id="24" class="buttonFlag">
+    <canvas id="miniFlag24" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="25" class="buttonFlag">
+    <canvas id="miniFlag25" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="26" class="buttonFlag">
+    <canvas id="miniFlag26" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="27" class="buttonFlag">
+    <canvas id="miniFlag27" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="28" class="buttonFlag">
+    <canvas id="miniFlag28" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  <button type="button" id="29" class="buttonFlag">
+    <canvas id="miniFlag29" width="24" height="16" style="border:1px solid">
+    </canvas>
+  </button>
+  </p>
+  <div>
+  <canvas id="mainFlag" width="240" height="160" style="border:2px solid">
+    Your browser does not support the HTML5 canvas tag.
+  </canvas>
+  <div>
+  <p id="debug"></p>
+  <script src="js/flags.js"></script>
+</body>
+</html>

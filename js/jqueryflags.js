@@ -10,4 +10,12 @@ $(document).ready(function(){
     $(this).fadeTo(500, 1, draw());
     //$("#debug").text(this.id);
   });
+  
+  $("label").click(function(){
+    $("label").not(this).attr('class', 'btn btn-default');
+    $(this).attr('class', 'btn btn-primary');
+    $("#mainFlag").attr("data-style", $(this).data("value"));
+    draw();
+    //$(this).text($(this).children().id);
+  });
 });

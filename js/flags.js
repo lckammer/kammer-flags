@@ -9,12 +9,12 @@ function  draw() {
 }
 
 function drawMiniFlags() {
-  var ind, canvas;
+  var ind, canvas, aux;
   
   // draw the mini flags
-  var buttonFlags = document.getElementsByClassName("buttonFlag");
+  var buttonFlags = document.getElementById("style").children;
   for (ind = 0; ind < buttonFlags.length; ind++) {
-    canvas = document.getElementById("miniFlag" + ind.toString());
+    canvas = buttonFlags[ind].children[1];
     drawFlag(canvas, "#FFFFFF", "#7F7F7F", "#000000", ind.toString());
   }
 }

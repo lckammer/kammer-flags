@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA613671-2CC5-4B10-BDB6-F8AA0994D77C}"
+	ProjectSection(SolutionItems) = preProject
+		flags.html = flags.html
+		index.html = index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{80FAEABA-2B21-4EE8-A0DC-71C8322A4479}"
+	ProjectSection(SolutionItems) = preProject
+		css\site.css = css\site.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{3E07DD11-5528-431D-99F1-C9B3E15AE35C}"
+	ProjectSection(SolutionItems) = preProject
+		js\flags.js = js\flags.js
+		js\jqueryflags.js = js\jqueryflags.js
+		js\site.js = js\site.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{2893A954-92B9-403D-B78D-EB73CE5320DF}"
+	ProjectSection(SolutionItems) = preProject
+		wwwroot\favicon.ico = wwwroot\favicon.ico
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80FAEABA-2B21-4EE8-A0DC-71C8322A4479} = {CA613671-2CC5-4B10-BDB6-F8AA0994D77C}
+		{3E07DD11-5528-431D-99F1-C9B3E15AE35C} = {CA613671-2CC5-4B10-BDB6-F8AA0994D77C}
+		{2893A954-92B9-403D-B78D-EB73CE5320DF} = {CA613671-2CC5-4B10-BDB6-F8AA0994D77C}
+	EndGlobalSection
+EndGlobal

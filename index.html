@@ -1,160 +1,65 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Flag Creation</title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/jqueryflags.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/index.css">
+  <!-- The above 3 meta tags *must* come first in the head; -->
+  <!-- any other head content must come *after* these tags -->
+  <meta name="description" content="Create your flag, for no good reason.">
+  <meta name="author" content="Leonardo Kammer">
+  <link rel="icon" href="wwwroot/favicon.ico">
+  <title>Flag Builder</title>
+  <!-- Bootstrap -- Latest compiled and minified CSS -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="wwwroot/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/site.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="container">
-  <div class="page-header"><h2>Personalize Your Flag</h2></div>
-  <div class="row">
-    <div class="col-lg-1">
-      <h4>Colors</h4>
-      <input type="color" id="color1" class="form-control" onchange="draw()" value=#FFFFFF>
-      <input type="color" id="color2" class="form-control" onchange="draw()" value=#7F7F7F>
-      <input type="color" id="color3" class="form-control" onchange="draw()" value=#000000>
-    </div>
-    <div class="col-lg-4">
-      <h4>Style</h4>
-      <div class="btn-group" id="style" data-toggle="buttons">
-        <label class="btn btn-primary active" data-value="0">
-          <input type="radio" name="radio-group" autocomplete="off" checked>
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="1">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="2">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="3">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="4">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="5">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="6">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="7">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="8">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="9">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="10">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="11">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="12">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="13">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="14">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="15">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="16">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="17">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="18">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="19">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="20">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="21">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="22">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="23">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="24">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="25">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="26">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="27">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="28">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
-        <label class="btn btn-default" data-value="29">
-          <input type="radio" name="radio-group" autocomplete="off">
-          <canvas width="30" height="20" style="border:1px solid"></canvas>
-        </label>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html" aria-label="Homepage">
+          <img src="wwwroot/favicon.ico" height="32" class="img-responsive" alt="Flag Builder">
+        </a>
       </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="flags.html">Flag</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
     </div>
-    <div class="col-lg-6">
-      <h4>Preview</h4>
-      <canvas id="mainFlag" width="240" height="160" style="border:2px solid">
-        Your browser does not support the HTML5 canvas tag.
-      </canvas>
+  </nav>
+  <div class="container">
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>Flag Builder</h1>
+      <p>This site is an exercise to learn the fundamental languages of the web.</p>
     </div>
-  </div>
-</div>
-
-<script src="js/flags.js"></script>
+    <footer id="site-footer"></footer>
+  </div> <!-- /container -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+          integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+          crossorigin="anonymous"></script>
+  <script src="js/site.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="wwwroot/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
